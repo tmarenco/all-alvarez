@@ -1,0 +1,50 @@
+.title {
+    font-size: 3vw;
+    font-weight: 700;
+    border-bottom: solid 5px silver;
+}
+
+
+.goal-card{
+    width: 550px !important;
+    height: 170px;
+    color: white;
+    /* background-color: #2E3981;
+    border: #1f2557 solid 3px; */
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
+.goal-card:hover {
+    color: white;
+    opacity: 70%;
+}
+
+.rival{
+    font-size: 2.5vh;
+}
+
+
+.data{
+    border-radius: 20px
+}
+
+
+.video-button{
+    border-radius: 10px;
+    padding: 15px;
+    width: 20%;
+}
+
+.video-button:hover{
+    background-color: black;
+    color: white
+}
+
+@media (max-width: 1043px) {
+    .goal-card {
+        /* width: 80% !important; */
+        /* height: 200px; */
+    }
+  }

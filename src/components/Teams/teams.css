@@ -1,0 +1,15 @@
+.team-image{
+    width: 50%;
+}
+
+.team-image:hover{ 
+    filter: grayscale(0%);
+}
+
+.team-grey {
+    filter: grayscale(100%);
+}
+
+.team{
+    cursor: pointer;
+}

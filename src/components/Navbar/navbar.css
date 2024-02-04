@@ -1,0 +1,37 @@
+ul{
+    background-color: #67a0e8;
+}
+
+li, li a{
+    text-decoration: none;
+    color: #DFE1E1;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+
+/* .navbar{
+    background-color: black;
+}
+
+.nav-logo{
+    width: 10%;
+}
+
+.nav-link{
+    cursor: pointer;
+    color: #DFE1E1
+}
+  
+.nav-link:hover {
+    color: #DFE1E1
+}
+
+.active{
+    color: #DFE1E1 !important
+}
+
+
+.navbar-toggler{
+    background-color: #DFE1E1;
+} */

@@ -1,0 +1,44 @@
+body{
+    font-family: 'Prompt', sans-serif !important;
+    background-color: white !important;
+}
+
+
+.form-wrapper{
+    background-color: #2E3981;
+
+    .form{
+        display: flex;
+        justify-content: center;
+        width: 25%;
+        background-color: white;
+        border-radius: 1rem;
+        padding: 2rem;
+    }
+    
+    
+    .btn {
+        background-color: #2E3981 !important;
+        color: white !important
+    }
+    
+    .form-title{
+        text-decoration: underline #2E3981;
+    }
+}
+
+
+:root {
+    --plyr-color-main: #1ac266;
+    /* --plyr-video-background: blue --> NO NECESITO */
+    /* --plyr-focus-visible-color: red;
+    --plyr-badge-background: orange;
+    --plyr-badge-text-color: yellow;
+    --plyr-badge-border-radius: 20px;
+    --plyr-captions-background: purple;
+    --plyr-captions-text-color: white;
+    --plyr-control-icon-size: 50px;
+    --plyr-control-spacing: 50px; */
+
+
+  }
