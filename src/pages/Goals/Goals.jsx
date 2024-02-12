@@ -1,7 +1,9 @@
+import styles from './goals.module.css';
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux"
-import { setActiveGoal, setGoals } from "../../store/goals/goalsSlice";
-import { GoalCard } from "./GoalCard";
+import { setGoals } from "../../store/goals/goalsSlice";
+import { GoalCard } from "../../components/Goals/GoalCard";
+
 
 export const Goals = () => {
 
@@ -17,8 +19,8 @@ export const Goals = () => {
     
     return (
         <>
-            <h1 className="text-center title" style={{ color: active?.primaryColor }}>GOAL COUNT: <span style={{ color: active?.secondaryColor }}>{goals.length}</span></h1>
-            <div className="">
+            <h1 className={`text-center ${styles.title}`} style={{ color: active?.primaryColor }}>GOAL COUNT: <span style={{ color: active?.secondaryColor }}>{goals.length}</span></h1>
+            <div>
                 <div className="row justify-content-center w-100 ">
                     {       
                         goals?.map(goal => (

@@ -1,0 +1,16 @@
+.data{
+    border-radius: 20px
+}
+
+
+.video-button{
+    border-radius: 10px;
+    padding: 15px;
+    width: 20%;
+}
+
+.video-button:hover{
+    background-color: black;
+    color: white
+}
+

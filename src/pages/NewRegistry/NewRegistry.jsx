@@ -1,4 +1,3 @@
-import './newRegistry.css'
 import { useFormik } from 'formik';
 import { useDispatch } from 'react-redux';
 import { addNewGoal } from '../../store/goals/goalsSlice';

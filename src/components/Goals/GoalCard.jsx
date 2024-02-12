@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
-import './goals.css'
-import { NavLink, useNavigate } from 'react-router-dom'
+import styles from './goal-card.module.css';
+import { useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 import { setActiveGoal } from '../../store/goals/goalsSlice';
 
@@ -19,7 +19,7 @@ export const GoalCard = ( { goal } ) => {
 
     return (
         <>
-            <div className="col-12 col-lg-6 col-xl-4 col-xxl-3 gy-3 goal-card mx-2" style={{ background: active?.primaryColor, border: `solid 3px ${active?.secondaryColor}`  }}  onClick={ () => onSetActiveGoal( goal ) }>
+            <div className={`${styles['goal-card']} col-12 col-lg-6 col-xl-4 col-xxl-3 gy-3 mx-2`} style={{ background: active?.primaryColor, border: `solid 3px ${active?.secondaryColor}`  }}  onClick={ () => onSetActiveGoal( goal ) }>
                 <div className="row">
                     <div className='col-6'>
                         <h5>N°{ goal.order }</h5>
@@ -34,7 +34,7 @@ export const GoalCard = ( { goal } ) => {
                     </div>
                     <div className="col-6 align-self-center">
                         <h5 className='text-center'>vs</h5>
-                        <h1 className='text-center rival'>{ goal.rival }</h1>
+                        <h1 className={`${styles.rival} text-center`}>{ goal.rival }</h1>
                     </div>
                     <div className='col-3 align-self-center'>
                         <h2 className='text-end'>{ goal.result }</h2>
@@ -50,11 +50,13 @@ export const GoalCard = ( { goal } ) => {
 
 
 GoalCard.propTypes = {
-    competition: PropTypes.string,
-    order: PropTypes.number,
-    result: PropTypes.string,
-    rival: PropTypes.string,
-    season: PropTypes.string,
-    team: PropTypes.string,
-    url: PropTypes.string
+    goal: {
+        competition: PropTypes.string,
+        order: PropTypes.number,
+        result: PropTypes.string,
+        rival: PropTypes.string,
+        season: PropTypes.string,
+        team: PropTypes.string,
+        url: PropTypes.string,
+    }
   }

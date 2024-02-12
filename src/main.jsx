@@ -6,7 +6,7 @@ import { ErrorPage } from './components/ErrorPage/ErrorPage.jsx';
 import { Contact } from './pages/Contact/Contact.jsx';
 import { Home } from './pages/Home/Home.jsx';
 import { Goals } from './pages/Goals/Goals.jsx';
-import { Goal } from './pages/Goals/Goal.jsx';
+import { Goal } from './pages/IndividualGoal/Goal.jsx';
 import { NewRegistry } from './pages/NewRegistry/NewRegistry.jsx';
 import './styles.css'
 import { Login } from './pages/Login/Login.jsx';
@@ -14,7 +14,6 @@ import { Provider } from 'react-redux';
 import { store } from './store/store.js';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Register } from './pages/Register/Register.jsx';
-import { Prueba } from './pages/Prueba/prueba.jsx';
 
 
 
@@ -53,10 +52,6 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register />
-      },
-      {
-        path: "/prueba",
-        element: <Prueba />
       },
       {
         path: "/*",

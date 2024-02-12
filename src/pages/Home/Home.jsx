@@ -1,9 +1,8 @@
+import styles from './home.module.css'
 import { useSelector } from 'react-redux';
 import { Teams } from '../../components/Teams/Teams';
 import { useEffect, useState } from 'react';
-import './home.css';
 import { Goals } from '../Goals/Goals';
-
 import { getEnvVariables } from '../../helpers/getEnvVariables';
 
 export const Home = () => {
@@ -35,7 +34,7 @@ export const Home = () => {
         <>
             <div className={ containerClassName }>
                 <div className="row h-100">
-                    <div className="col-12 col-xxl-7 p-0 position-relative image-container">
+                    <div className={`col-12 col-xxl-7 p-0 position-relative ${styles['image-container']}`}>
                         <img src={ active.backGroundImage } alt={ active.name } className='img-fluid w-100 h-100' />
                     </div>
                     {/* <div className="col-12 col-xxl-5 d-flex align-items-center justify-content-center position-relative" style={{background: active?.backGroundColor }}>
@@ -45,10 +44,10 @@ export const Home = () => {
                         </p>
                     </div> */}
 
-                    <div className="col-12 col-xxl-5 name d-flex flex-column justify-content-center align-items-center" style={{ background: active?.backGroundColor }}>
-                        <p><span className='first-letter'>J. </span>ALVAREZ</p>
+                    <div className={`col-12 col-xxl-5 d-flex flex-column justify-content-center align-items-center ${styles.name}`} style={{ background: active?.backGroundColor }}>
+                        <p><span className={`${styles['first-letter']}`}>J. </span>ALVAREZ</p>
                         <p>{active.number}</p>
-                        <p className='sub-title'>Choose your <span className="text-decoration-line-through text-light">team</span> theme!</p>
+                        <p className={`${styles['sub-title']}`}>Choose your <span className="text-decoration-line-through text-light">team</span> theme!</p>
                         <Teams />
                     </div>
                 </div>
